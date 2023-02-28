@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Practical javaScript</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,700&family=Roboto:ital,wght@0,500;0,900;1,900&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+<!-- Start Slider -->
+<div class="slider-container">
+    <div id="slider-number" class="slider-number"></div>
+    <img src="images/slider1.jpg" alt="slider #1">
+    <img src="images/slider2.jpg" alt="slider #2">
+    <img src="images/slider3.jpg" alt="slider #3">
+    <img src="images/slider4.jpg" alt="slider #4">
+    <img src="images/slider5.jpg" alt="slider #5">
+</div>
+<div class="slider-controls">
+    <span id="prev" class="prev">Previous</span>
+    <span id="indicators" class="indicators">
+    </span>
+    <span id="next" class="next">Next</span>
+</div>
+<!-- End Slider -->
+<!-- Start Memory Game -->
+<div class="game-container">
+    <div class="start-game">
+        <h3>Start Game</h3>
+        <div class="over-lay"></div>
+    </div>
+    <div class="info-container">
+        <div class="name">
+            Hello: <span></span>
+        </div>
+        <div class="countdown">
+            Time: <span>82</span>
+        </div>
+        <div class="tries">
+            Wrong Tries: <span>0</span>
+        </div>
+    </div>
+    <div class="memory">
+        <div class="games" data-sport="barcelona">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/memorygame1.jpg">
+            </div>
+        </div>
+        <div class="games" data-sport="barcelona">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/memorygame1.jpg">
+            </div>
+        </div>
+        <div class="games" data-sport="real-madrid">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/memorygame2.jpg">
+            </div>
+        </div>
+        <div class="games" data-sport="real-madrid">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/memorygame2.jpg">
+            </div>
+        </div>
+        <div class="games" data-sport="Atlitco">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/memorygame10.jpg">
+            </div>
+        </div>
+        <div class="games" data-sport="Atlitco">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/memorygame10.jpg">
+            </div>
+        </div>
+        <div class="games" data-sport="man-city">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/memorygame3.png">
+            </div>
+        </div>
+        <div class="games" data-sport="man-city">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/memorygame3.png">
+            </div>
+        </div>
+        <div class="games" data-sport="liverpool">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/memorygame4.png">
+            </div>
+        </div>
+        <div class="games" data-sport="liverpool">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/memorygame4.png">
+            </div>
+        </div>
+        <div class="games" data-sport="paris">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/memorygame5.jpeg">
+            </div>
+        </div>
+        <div class="games" data-sport="paris">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/memorygame5.jpeg">
+            </div>
+        </div>
+        <div class="games" data-sport="man-united">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/memorygame6.jpeg">
+            </div>
+        </div>
+        <div class="games" data-sport="man-united">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/memorygame6.jpeg">
+            </div>
+        </div>
+        <div class="games" data-sport="milan">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/memorygame7.png">
+            </div>
+        </div>
+        <div class="games" data-sport="milan">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/memorygame7.png">
+            </div>
+        </div>
+        <div class="games" data-sport="Arsenal">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/memorygame8.png">
+            </div>
+        </div>
+        <div class="games" data-sport="Arsenal">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/memorygame8.png">
+            </div>
+        </div>
+        <div class="games" data-sport="chelsae">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/memorygame9.jpeg">
+            </div>
+        </div>
+        <div class="games" data-sport="chelsae">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/memorygame9.jpeg">
+            </div>
+        </div>
+    </div>
+</div>
+<audio id="music-game" src="music/musicgame.mp3" preload="auto"></audio>
+<!-- End Memory Game -->
+<script src="js/main.js"></script>
+</body>
+</html>
